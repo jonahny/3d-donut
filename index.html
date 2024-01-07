@@ -3,11 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>Donut Visualizer</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+    <style>
+      #donut {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
   </head>
   <body>
     <p>
       Donut Visualizer is about a child named leo creating a donut on an engine
       called blender
     </p>
+    <model-viewer
+      id="donut"
+      alt="Its a donut with pink strawberry glaze, it has no sprinkles because someone ate them."
+      src="./donut.glb"
+      camera-controls
+    ></model-viewer>
   </body>
 </html>
